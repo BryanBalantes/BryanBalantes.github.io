@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="logo">
+          <a href="#profile">
+            <img id="my-logo" src="img/My_Ultimate_Logo.png" alt="logo">
+          </a>
+          <h1>Bry<span>an</span></h1>
+        </li>
+        <input type="checkbox" id="check">
+        <span class="menu">
+          <li><a href="#aboutme"><i class="fas fa-info-circle icon"></i>Aboutme</a></li>
+          <li><a href="#skills"><i class="fa-solid fa-brain icon"></i>Skills</a></li>
+          <li><a href="#project"><i class="fa-solid fa-diagram-project icon"></i>Project</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-address-book icon"></i>Contact</a></li>
+          <label for="check" class="close-menu">
+            <li class="fas fa-times"></li>
+          </label>
+        </span>
+        <label for="check" class="open-menu">
+          <li class="fas fa-bars"></li>
+        </label>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-container bg-light-green bg-image">
+      <div class="profile-container" id="profile">
+        <img class="my-profile" src="img/bryan2.jpg" alt="myProfile">
+        <div class="profile-name">
+          <h1>BRYAN M. BALANTES</h1>
+          <h3>IT Graduate &VerticalSeparator; Web Developer</h3>
+          <div class="button-container">
+            <a href="files/Balantes_Bryan.pdf" download class="btn-download">
+              <button class="download-btn">
+                 CV Download
+                 <i class="fa fa-download"></i>
+              </button> 
+            </a>
+            <a href="https://bryzetechieworld.blogspot.com/2024/02/blog-post.html" target="_blank" class="btn-download">
+              <button class="blog-btn">
+                 My Blog
+                 <i class="fa-brands fa-blogger"></i>
+              </button> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutme-skill-container">
+      <div class="main-container aboutme-container">
+        <div id="aboutme">    
+          <h2 class="title aboutme-title">About Me</h2>
+          <div class="text-content">
+            <div class="indent-text">
+              <p>
+                I am Bryan M. Balantes, 31 years old single and a resident of Purok 5, Lidong Sto. Domingo, Albay. 
+              </p>
+            </div>
+            <div class="indent-text">
+              <p>
+                I am holding two Bachelor's Degree, one is Bachelor of Science in Computer Engineering which I obtained at Aquinas University of Legazpi on March 31, 2015, and the other one is Bachelor of Science in Information Technology at STI College of Legazpi on April 26, 2019.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container skill-container bg-lighter-green">
+        <div id="skills">
+          <h2 class="title skill-title">Skills</h2>
+          <div class="container">
+            <div class="my-skills">
+              <ul class="skills">
+                <li class="myskills"><img class="skill-logo" src="img/java-logo-svgrepo-com.svg" alt="java_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/csharp-svgrepo-com.svg" alt="csharp_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/python-svgrepo-com.svg" alt="python_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/javascript-svgrepo-com.svg" alt="javascript_logo"></li>
+              </ul>
+            </div>
+            <div class="my-skills">
+              <ul class="skills">
+                <li class="myskills"><img class="skill-logo" src="img/html-5-svgrepo-com.svg" alt="html_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/css-svgrepo-com.svg" alt="css_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/mysql-logo-svgrepo-com.svg" alt="mysql_logo"></li>
+                <li class="myskills"><img class="skill-logo" src="img/photoshop-cc-logo-svgrepo-com.svg" alt="photoshop_logo"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container project-container bg-green" id="project">
+      <h2 class="title project-title">Project</h2>
+      <div class="container-project">
+        <div class="gallery">
+          <a href="" target="_blank">
+            <img src="img/samplewebsite.png" alt="sample_project" width="200">
+          </a>
+        <div class="description">Sample Project</div>
+        </div>
+        <div class="gallery">
+          <a href="" target="_blank">
+          <img src="img/php-documentation.png" alt="sample_project">
+          </a>
+          <div class="description">Sample Project</div>
+        </div>
+        <div class="gallery">
+          <a href="" target="_blank">
+          <img src="img/hw-flex.png" alt="sample_project">
+          </a>
+          <div class="description">Sample Project</div>
+        </div>
+        <div class="gallery">
+          <a href="" target="_blank">
+          <img src="img/sample-project.png" alt="sample_project">
+          </a>
+          <div class="description">Sample Project</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container contact-container bg-magnolia " id="contact">
+      <h2 class="title contact-title" id="contact-text">Let's connect</h2>
+      <div class="container-contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+          <input type="hidden" name="access_key" value="cb9e6252-ccfd-4950-a1fd-849b6f659979">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit" class="btn-submit">Submit<i class="fa-regular fa-paper-plane"></i></button> 
+        </form>
+        <div class="contact-info">
+          <div class="contact contact-phone">
+            <i class="fa-solid fa-mobile"></i>
+            <h3 class="my-phone-number">+639956519213</h3> 
+          </div>
+          <div class="contact contact-email">
+            <i class="fa-solid fa-envelope"></i>
+            <h3 class="my-email">bryanbalantes11@gmail.com</h3> 
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/bryan.m.balantes?mibextid=ZbWKwL" target="_blank"> 
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://discord.gg/qJuPdZjy" target="_blank">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://gitlab.com/uplift-code-camp/students/batch-19/bryan-balantes/projects.git" target="_blank">
+              <i class="fa-brands fa-gitlab"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>
+        &copy; 2024 Uplift Project 
+      </p>
+      <p>
+        Created by Bryan Balantes
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
