@@ -8,13 +8,13 @@ const showMore = document.querySelector('#show-more-button');
 let inputData = "";
 let page = 1;
 
-async function searchImages() {
+const searchImages = async () => {
   try {
     inputData = inputEl.value;
-    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${API_KEY}&per_page=12`;
-    const response = await fetch(url);
+    const API_URL = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${API_KEY}&per_page=12`;
+    const response = await fetch(API_URL);
     const data = await response.json();
-
+    console.log(response);
     console.log(data);
     const results = data.results;
 
@@ -32,7 +32,7 @@ async function searchImages() {
     if (page === 1) {
       searchResults.innerHTML = "";
     }
-    
+
     results.map((result) => {
       const imageWrapper = document.createElement('div');
       imageWrapper.classList.add('search-result');
@@ -64,15 +64,10 @@ async function searchImages() {
 formEl.addEventListener('submit', (event) => {
   event.preventDefault();
   page = 1;
-  searchImages()
+  searchImages();
 });
 
 showMore.addEventListener('click', () => {
   page++;
-  searchImages()
-});
-
-showMore.addEventListener('keydown', () => {
-  page++;
-  searchImages()
+  searchImages();
 });
